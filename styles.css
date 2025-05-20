@@ -1,0 +1,58 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #1d6f8a;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+main.entradas {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+main.entradas article {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+main.entradas article:hover {
+  transform: scale(1.02);
+}
+article img {
+  width: 100%;
+  border-radius: 6px;
+}
+article h2 a {
+  color: #1d6f8a;
+  text-decoration: none;
+}
+.entrada-detalle {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+footer {
+  text-align: center;
+  background: #061522;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
